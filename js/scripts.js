@@ -49,6 +49,24 @@ function englishToPigLatin(inputText){
   return result;
 }
 
+function sentenceToPigLatin(inputText){
+  if (typeof inputText !== "string" || inputText.length == 0) {
+    return;
+  }
+
+  var words = inputText.split(' ');
+  var PLsentence = "";
+  words.forEach(function(word){
+    PLword = englishToPigLatin(word);
+    if(PLsentence.length !== 0){
+      PLsentence += " ";
+    }
+    PLsentence += PLword;
+  });
+
+  return PLsentence;
+}
+
 function test(){
   console.log(englishToPigLatin("4"));
   console.log(englishToPigLatin(""));
