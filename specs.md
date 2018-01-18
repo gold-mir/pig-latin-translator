@@ -18,7 +18,7 @@
   * Example Input: cat
   * Example Output: atcay
 
-###For words beginning with multiple consonants, the program moves them to the end in order and adds "ay".
+###For words beginning with multiple consonants, the program moves them to the end in order and adds "ay". -done
   * Example Input: writing
   * Example Output: itingwray
 
