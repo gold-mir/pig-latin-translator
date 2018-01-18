@@ -29,3 +29,7 @@
 ###If first consonants include a "qu", the u is moved at the same time as the q.
   * Example Input: squirrel
   * Example Output: irrelsquay
+
+###The program propely translates multi-word sentences.
+  * Example Input: i like cats
+  * Example Output: iay ikelay atscay
