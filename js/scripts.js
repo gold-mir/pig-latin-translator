@@ -1,7 +1,7 @@
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
 var vowels = "aeiouy"
 function englishToPigLatin(inputText){
-  if (typeof inputText !== "string") {
+  if (typeof inputText !== "string" || inputText.length == 0) {
     return;
   }
   var text = inputText.toLowerCase();
@@ -23,13 +23,20 @@ function englishToPigLatin(inputText){
     //get index of first vowel
     var firstVowelIndex;
 
-    //Loops to look for the first vowel. Starts from the second
-    //letter of the word because we've already determined that the
-    //first one is not a vowel
-    for(var index = 1; index < text.length; index++){
-      if(vowels.includes(text[index])){
+    for(var index = 0; index < text.length; index++){
+      var currentLetter = text[index]
+
+      if (index === 0 && vowels.includes(currentLetter) && currentLetter !== "y") {
         firstVowelIndex = index;
         break;
+      } else if (index != 0 && vowels.includes(currentLetter)){
+        firstVowelIndex = index;
+        break;
+      } else if (currentLetter === "q"){
+        if(text[index + 1] === "u"){
+          firstVowelIndex = index + 2;
+          break;
+        }
       }
     }
 
@@ -40,4 +47,15 @@ function englishToPigLatin(inputText){
     result += wordBody + firstConsonant + "ay";
   }
   return result;
+}
+
+function test(){
+  console.log(englishToPigLatin("4"));
+  console.log(englishToPigLatin(""));
+  console.log(englishToPigLatin("i"));
+  console.log(englishToPigLatin("example"));
+  console.log(englishToPigLatin("cat"));
+  console.log(englishToPigLatin("writing"));
+  console.log(englishToPigLatin("yellow"));
+  console.log(englishToPigLatin("squirrel"));
 }

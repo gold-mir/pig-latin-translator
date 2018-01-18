@@ -1,6 +1,6 @@
 ###The program does nothing for non-alphabetical characters. -done
-  * Example Input: 3
-  * Example Output: 3
+  * Example Input: 4
+  * Example Output: 4
 
 ###The program doesn't fail when given a blank Input -done
   * Example Input: ""
@@ -22,7 +22,7 @@
   * Example Input: writing
   * Example Output: itingwray
 
-###'Y' is treated as a consonant when it's the first letter in a word.
+###'Y' is treated as a consonant when it's the first letter in a word. -done
   * Example Input: yellow
   * Example Output: ellowyay
 
