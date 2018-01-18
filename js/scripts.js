@@ -1,16 +1,24 @@
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
-
+var vowels = "aeiouy"
 function englishToPigLatin(inputText){
   if (typeof inputText !== "string") {
     return;
   }
   var text = inputText.toLowerCase();
-  var characters = text.split('');
-  for(var index = 0; index < characters.length; index++){
-    if (!alphabet.includes(characters[index])) {
+  var result = "";
+  // var characters = text.split('');
+
+  //Make sure text contains no non-letter characters
+  for(var index = 0; index < text.length; index++){
+    if (!alphabet.includes(text[index])) {
       return inputText;
     }
   }
 
-  return false;
+  if(vowels.includes(text[0])){
+    result += text;
+    result += "ay";
+  }
+
+  return result;
 }

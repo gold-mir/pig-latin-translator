@@ -2,15 +2,15 @@
   * Example Input: 3
   * Example Output: 3
 
-###The program doesn't fail when given a blank Input
+###The program doesn't fail when given a blank Input -done
   * Example Input: ""
   * Example Output:
 
-###The program adds "ay" to single-letter words beginning with a vowel.
+###The program adds "ay" to single-letter words beginning with a vowel. -done
   * Example Input: i
   * Example Output: iay
 
-###The program adds "ay" to words beginning with a vowel of any length.
+###The program adds "ay" to words beginning with a vowel of any length. -done
   * Example Input: example
   * Example Output: exampleay
 
