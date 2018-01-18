@@ -77,3 +77,19 @@ function test(){
   console.log(englishToPigLatin("yellow"));
   console.log(englishToPigLatin("squirrel"));
 }
+
+$(document).ready(function(){
+  $("#piglatin-translator").submit(function(event){
+    event.preventDefault();
+    var textToTranslate = $("#input-text").val();
+    var piglatin = sentenceToPigLatin(textToTranslate);
+    $("#output").text("");
+    if(piglatin){
+      $("#output").append('<h3>Original Text: "' + textToTranslate + '"</h3>');
+      $("#output").append('<h3>Pig Latin Text: "' + piglatin + '"</h3>');
+    } else {
+      $("#output").append('<h3>Please enter some valid text</h3>');
+    }
+    $("#input-text").val("")
+  });
+});
