@@ -15,10 +15,16 @@ function englishToPigLatin(inputText){
     }
   }
 
+  //if string begins with a vowel, add 'ay'
   if(vowels.includes(text[0])){
-    result += text;
-    result += "ay";
+    result += text + "ay";
   }
-
+  if(!vowels.includes(text[0])){
+    var firstConsonant;
+    var wordBody;
+    firstConsonant = text.slice(0, 1);
+    wordBody = text.slice(1, text.length);
+    result += wordBody + firstConsonant + "ay";
+  }
   return result;
 }

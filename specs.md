@@ -14,7 +14,7 @@
   * Example Input: example
   * Example Output: exampleay
 
-###For words beginning with a consonant, the program moves the consonant to the end and then adds "ay".
+###For words beginning with a consonant, the program moves the consonant to the end and then adds "ay". -done
   * Example Input: cat
   * Example Output: atcay
 
