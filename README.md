@@ -35,6 +35,6 @@
 * jquery
 
 ##### Setup Instructions
-1. Pending
+1. 1. Visit [https://gold-mir.github.io/pig-latin-translator/](https://gold-mir.github.io/pig-latin-translator/)  
 
 *© Ainur Dzhaianbaeva and Miranda Keith, 2016*

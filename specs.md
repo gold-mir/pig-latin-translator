@@ -6,23 +6,23 @@
   * Example Input: ""
   * Example Output:
 
-###The program adds "ay" to single-letter words beginning with a vowel. -done
+###The program adds "ay" to single-letter words beginning with a vowel.
   * Example Input: i
   * Example Output: iay
 
-###The program adds "ay" to words beginning with a vowel of any length. -done
+###The program adds "ay" to words beginning with a vowel of any length.
   * Example Input: example
   * Example Output: exampleay
 
-###For words beginning with a consonant, the program moves the consonant to the end and then adds "ay". -done
+###For words beginning with a consonant, the program moves the consonant to the end and then adds "ay".
   * Example Input: cat
   * Example Output: atcay
 
-###For words beginning with multiple consonants, the program moves them to the end in order and adds "ay". -done
+###For words beginning with multiple consonants, the program moves them to the end in order and adds "ay".
   * Example Input: writing
   * Example Output: itingwray
 
-###'Y' is treated as a consonant when it's the first letter in a word. -done
+###'Y' is treated as a consonant when it's the first letter in a word.
   * Example Input: yellow
   * Example Output: ellowyay
 
